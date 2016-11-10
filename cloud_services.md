@@ -37,3 +37,9 @@ The decisions became easier from there on. There were tables:
 |||Can require official technical support to get anything major done|
 
 Tables make everything better. There wasn't a justifiable reason for a good chart or map in this particular investigation, but there were plenty of data to work with all the same. 
+
+There were also a great many emails. An important thing to consider when you're contemplating a move of this kind, especially where it affects the nature of your underlying infrastructure, is how your larger or more paranoid clients might be disposed towards the changes. 
+
+Such factors as location of data come into play; in our case some of our clients have a strong preference for their data being stored in the EU, subject to the Data Protection Act. This rules out the major US datacenters. Fortunately, all the services under consideration had datacentres in either the UK, Ireland or, for reasons best known only to them, Belgium. We also had to consider encryption and colocation of data, such as would occur in a shared database or shared hosting. An encrypted-at-rest VPS is the very minimum expected, however, so those were not significant barriers.
+
+Had we been looking at smaller hosting providers, or at self-hosting, we might also have had to consider redundancy of hardware in addition to the redundancy of data; one of the major advantages of using the large cloud providers is that they have all those concerns in hand; barring natural disasters, enemy action or Outside Context Problems they are unlikely to suffer full loss of data; mitigation of at least the first and in many cases the second can be performed relatively simply by having backups in a datacenter in another country.
